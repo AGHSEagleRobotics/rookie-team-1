@@ -38,7 +38,7 @@ void OutakePwr::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool OutakePwr::IsFinished() {
-    if(Robot::oi->getOpStick()->GetRawButton(1)) return false;
+    if(Robot::oi->getOpStick()->GetRawButton(2)) return false;
 
 	RobotMap::intakeShooterMotor->Set(0);
 	RobotMap::intakeTreadMotor->Set(0);
